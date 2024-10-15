@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Squada One';
+    src: url(Fonts/Squada_One/SquadaOne-Regular.ttf);
+}
+#main_title_logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 5em;
+    display: inline-flex;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: 2%;
+    z-index: 1;
+}
+#main_title_logo::before {
+    position: absolute;
+    content: "PROJECT.D";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -2px;
+    left: -2px;
+    z-index: 1;
+}
+#header_div {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+body {
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0;
+    height: 100vh;
+}
+.container {
+    position: relative;
+    height: 100vh;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    top: 3em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Images/project-d-background(1).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: 1;
+}
