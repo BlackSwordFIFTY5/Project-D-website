@@ -7,14 +7,16 @@
     background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
     background-clip: text;
     color: rgb(194, 194, 194);
-    font-size: 5em;
-    display: inline-flex;
+    font-size: 6vw;
+    display: inline-block;
     text-align: center;
     transform: skew(-25deg) scaleY(1) scale(2.2);
     font-family: 'Squada One';
     font-weight: bold;
     letter-spacing: 0.2em;
-    left: 2%;
+    left: 0%;
+    margin-top: 5%;
+    margin-left: 5%;
     z-index: 1;
 }
 #main_title_logo::before {
@@ -24,35 +26,259 @@
     background-clip: text;
     color: transparent;
     letter-spacing: 0.2em;
-    top: -2px;
-    left: -2px;
+    top: -0.2vh;
+    left: -0.2vw;
     z-index: 1;
 }
 #header_div {
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
+    min-width:  1vw;
 }
 body {
     background-color: rgba(0, 0, 0, 1);
     margin: 0;
+    overflow: hidden;
+    width: 100vw;
     height: 100vh;
 }
-.container {
+.background-image {
     position: relative;
-    height: 100vh;
+    overflow: scroll;
 }
-.container::before {
+.map-container {
+    position: relative;
+    transform-origin: top left; 
+    transform: scale(0.55) translateY(-28%) translateX(68%);
+    margin: 0%;
+    top: 0;
+    left: 10vw;
+}
+.map-container::before {
     content: '';
     position: absolute;
-    top: 3em;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('Images/project-d-background(1).png');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
+    background-image: url('Images/light-streaks.png');
+    top: 0%;
+    left: -65vw;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: scroll;
+    opacity: 80%;
+}
+
+.gunma-area:hover:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/gunma-cursor-hover.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    opacity: 70%;
+}
+.gunma-area:active:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/gunma-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
     z-index: 1;
+    opacity: 70%;
+}
+
+.tochigi-area:hover:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/tochigi-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    opacity: 70%;
+}
+.tochigi-area:active:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/gunma-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: 1;
+    overflow: scroll;
+    opacity: 70%;
+}
+
+.ibaraki-area:hover:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/ibaraki-cursor-hover.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: scroll;
+    opacity: 70%;
+}
+.ibaraki-area:active:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/ibaraki-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: 1;
+    overflow: scroll;
+    opacity: 70%;
+}
+
+.saitama-area:hover:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/saitama-cursor-hover.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: scroll;
+    opacity: 70%;
+}
+.saitama-area:active:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/saitama-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: 1;
+    overflow: scroll;
+    opacity: 70%;
+}
+
+.chiba-area:hover:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/chiba-cursor-hover.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: scroll;
+    opacity: 70%;
+}
+.chiba-area:active:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/chiba-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: 1;
+    overflow: scroll;
+    opacity: 70%;
+}
+
+.tokyo-area:hover:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/tokyo-cursor-hover.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: scroll;
+    opacity: 70%;
+}
+.tokyo-area:active:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('tokyo/gunma-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: 1;
+    overflow: scroll;
+    opacity: 70%;
+}
+
+.kanagawa-area:hover:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/kanagawa-cursor-hover.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: scroll;
+    opacity: 70%;
+}
+.kanagawa-area:active:before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/kanagawa-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: 1;
+    overflow: scroll;
+    opacity: 70%;
+}
+
+.underlay-svg {
+    position: relative;
+    transform: scale(0.55) translateY(-28%);
+    transform-origin: top right;
+}
+.map-container::before + underlay-svg {
+    z-index: -1;
+}
+.gunma-polygon {
+    fill: yellow;
+    bottom: 10em;
 }
