@@ -234,7 +234,7 @@ body {
     content: '';
     position: absolute;
     background-size: cover;
-    background-image: url('tokyo/tokyo-selected.png');
+    background-image: url('Images/tokyo-selected.png');
     top: 0%;
     left: 0%;
     width: 1080px;
