@@ -15,6 +15,7 @@
     font-weight: bold;
     letter-spacing: 0.2em;
     left: 0%;
+    overflow: hidden;
     margin-top: 5%;
     margin-left: 5%;
     z-index: 1;
@@ -26,6 +27,7 @@
     background-clip: text;
     color: transparent;
     letter-spacing: 0.2em;
+    overflow: hidden;
     top: -0.2vh;
     left: -0.2vw;
     z-index: 1;
@@ -35,6 +37,7 @@
     padding-left: 10%;
     padding-right: 10%;
     min-width:  1vw;
+    overflow: hidden;
 }
 body {
     background-color: rgba(0, 0, 0, 1);
@@ -45,7 +48,7 @@ body {
 }
 .background-image {
     position: relative;
-    overflow: scroll;
+    overflow: hidden;
 }
 .map-container {
     position: relative;
@@ -54,6 +57,7 @@ body {
     margin: 0%;
     top: 0;
     left: 10vw;
+    overflow: visible;
 }
 .map-container::before {
     content: '';
@@ -66,7 +70,7 @@ body {
     height: 1080px;
     max-height: 100%;
     z-index: -1;
-    overflow: scroll;
+    overflow: hidden;
     opacity: 80%;
 }
 
@@ -268,17 +272,4 @@ body {
     z-index: 1;
     overflow: scroll;
     opacity: 70%;
-}
-
-.underlay-svg {
-    position: relative;
-    transform: scale(0.55) translateY(-28%);
-    transform-origin: top right;
-}
-.map-container::before + underlay-svg {
-    z-index: -1;
-}
-.gunma-polygon {
-    fill: yellow;
-    bottom: 10em;
 }
