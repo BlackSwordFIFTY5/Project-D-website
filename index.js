@@ -197,3 +197,8 @@ document.getElementById("kanagawa-button").addEventListener('click', function() 
     document.getElementById("kanagawa-province-data").style.display = 'block';
     document.getElementById("kanagawa-area").id = "kanagawa-area-active";
 })
+
+window.addEventListener('load', function() {
+    // Hide the loading screen when everything has loaded
+    document.getElementById('loading').style.display = 'none';
+});
