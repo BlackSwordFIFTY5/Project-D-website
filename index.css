@@ -477,6 +477,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 4em;
+    font-family: "Squada One";
+    font-style: italic;
     z-index: 9999;
 }
