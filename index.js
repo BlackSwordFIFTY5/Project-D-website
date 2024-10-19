@@ -1,3 +1,14 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // true for mobile device
+    document.getElementById("style").setAttribute('href', 'index-mobile.css');
+    document.getElementById("script").setAttribute('src', 'index-mobile.js');
+} else {
+    // false for not mobile device
+    document.getElementById("style").setAttribute('href', 'index.css');
+    document.getElementById("script").setAttribute('src', 'index.js');
+}
+  
+
 function toggleProvinceData(targetProvince) {
 
     const provinces = ['gunma', 'tochigi', 'ibaraki', 'saitama', 'chiba', 'tokyo', 'kanagawa'];
