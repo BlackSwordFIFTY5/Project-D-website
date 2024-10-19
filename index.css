@@ -20,7 +20,7 @@
     z-index: 9999;
 }
 
-#main_title_logo {
+#main-title-logo {
     position: relative;
     background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
     background-clip: text;
@@ -37,7 +37,7 @@
     margin-left: 5%;
     z-index: 2;
 }
-#main_title_logo::before {
+#main-title-logo::before {
     position: absolute;
     content: "PROJECT.D";
     background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
@@ -48,11 +48,14 @@
     left: -0.2vw;
     z-index: 2;
 }
-#header_div {
+#header-div {
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
     min-width:  1vw;
+}
+#top-menu-button-mobile {
+    display: none;
 }
 body {
     display: block;
@@ -411,6 +414,9 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
     z-index: 2;
+}
+#title-menu {
+    display: none;
 }
 ::-webkit-scrollbar {
     width: 10px;
