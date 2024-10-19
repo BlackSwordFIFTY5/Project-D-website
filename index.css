@@ -37,15 +37,18 @@
     min-width:  1vw;
 }
 body {
+    display: block;
     background-color: rgba(0, 0, 0, 1);
     margin: 0;
-    overflow: visible;
+    overflow: hidden;
     width: 100vw;
     height: 100vh;
+    max-height: 100vh;
 }
 .background-image {
     position: relative;
     overflow: visible;
+    height: 100vh;
 }
 .map-container {
     position: relative;
@@ -55,6 +58,7 @@ body {
     top: 0;
     left: 10vw;
     z-index: 1;
+    max-height: fit-content;
 }
 .map-container::before {
     content: '';
@@ -71,7 +75,7 @@ body {
     opacity: 80%;
 }
 
-.gunma-area:hover:before {
+#gunma-area:hover:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -85,7 +89,7 @@ body {
     opacity: 70%;
     overflow: visible;
 }
-.gunma-area:active:before {
+#gunma-area:active:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -100,7 +104,7 @@ body {
     overflow: visible;
 }
 
-.tochigi-area:hover:before {
+#tochigi-area:hover:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -114,7 +118,7 @@ body {
     opacity: 70%;
     overflow: visible;
 }
-.tochigi-area:active:before {
+#tochigi-area:active:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -129,7 +133,7 @@ body {
     opacity: 70%;
 }
 
-.ibaraki-area:hover:before {
+#ibaraki-area:hover:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -143,7 +147,7 @@ body {
     overflow: visible;
     opacity: 70%;
 }
-.ibaraki-area:active:before {
+#ibaraki-area:active:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -158,7 +162,7 @@ body {
     opacity: 70%;
 }
 
-.saitama-area:hover:before {
+#saitama-area:hover:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -172,7 +176,7 @@ body {
     overflow: visible;
     opacity: 70%;
 }
-.saitama-area:active:before {
+#saitama-area:active:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -187,7 +191,7 @@ body {
     opacity: 70%;
 }
 
-.chiba-area:hover:before {
+#chiba-area:hover:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -201,7 +205,7 @@ body {
     overflow: visible;
     opacity: 70%;
 }
-.chiba-area:active:before {
+#chiba-area:active:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -216,7 +220,7 @@ body {
     opacity: 70%;
 }
 
-.tokyo-area:hover:before {
+#tokyo-area:hover:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -230,7 +234,7 @@ body {
     overflow: visible;
     opacity: 70%;
 }
-.tokyo-area:active:before {
+#tokyo-area:active:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -245,7 +249,7 @@ body {
     opacity: 70%;
 }
 
-.kanagawa-area:hover:before {
+#kanagawa-area:hover:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -259,7 +263,7 @@ body {
     overflow: visible;
     opacity: 70%;
 }
-.kanagawa-area:active:before {
+#kanagawa-area:active:before {
     content: '';
     position: absolute;
     background-size: cover;
@@ -272,4 +276,192 @@ body {
     z-index: -1;
     overflow: visible;
     opacity: 70%;
+}
+
+#gunma-area-active::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/gunma-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    opacity: 70%;
+    overflow: visible;
+}
+#tochigi-area-active::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/tochigi-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: visible;
+    opacity: 70%;
+}
+#ibaraki-area-active::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/ibaraki-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: visible;
+    opacity: 70%;
+}
+#saitama-area-active::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/saitama-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: visible;
+    opacity: 70%;
+}
+
+#chiba-area-active::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/chiba-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: visible;
+    opacity: 70%;
+}
+#tokyo-area-active::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/tokyo-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: visible;
+    opacity: 70%;
+}
+#kanagawa-area-active::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    background-image: url('Images/kanagawa-selected.png');
+    top: 0%;
+    left: 0%;
+    width: 1080px;
+    height: 1080px;
+    max-height: 100%;
+    z-index: -1;
+    overflow: visible;
+    opacity: 70%;
+}
+
+.menu {
+    position: relative;
+    display: auto;
+    top: -170vh;
+    left: -14vw;
+    width: 45vw;
+    height: 50vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 2;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(172, 0, 0);
+    border-radius: 5px;
+    width: 9px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(100, 0, 0);
+}
+
+.menu-buttons {
+    position: relative;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    width: 43vw;
+    height: 10vh;
+    background: linear-gradient(to right, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.1))
+}
+.menu-buttons:hover {
+    transition: background 2s ease-in-out;
+    background: linear-gradient(to right, rgb(255, 0, 0, 0.5), rgba(255, 255, 255, 0.1));
+}
+.menu-buttons > p {
+    position: absolute;
+    color: azure;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    font-family: 'Squada One';
+    letter-spacing: 0.2vw;
+}
+
+#main-menu {
+    display: block;
+}
+
+#gunma-province-data {
+    display: none;
+}
+#tochigi-province-data {
+    display: none;
+}
+#ibaraki-province-data {
+    display: none;
+}
+#chiba-province-data {
+    display: none;
+}
+#saitama-province-data {
+    display: none;
+}
+#tokyo-province-data {
+    display: none;
+}
+#kanagawa-province-data {
+    display: none;
+}
+
+#province-list {
+    display: none;
+}
+#cars-list {
+    display: none;
 }
