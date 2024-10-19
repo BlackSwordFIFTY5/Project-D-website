@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Squada One';
+    src: url(Fonts/Squada_One/SquadaOne-Regular.ttf);
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    font-family: 'Squada One';
+    font-style: italic;
+    z-index: 9999;
+}
+
+#background-mobile {
+    background-image: url('Images/light-streaks.png');
+    background-size: 100%;
+    z-index: 1;
+}
+
+#top-menu-button-mobile {
+    display: inline-block;
+    position: relative;
+    left: -30%;
+    top: 2vh;
+    margin: auto;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 1.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2em;
+    height: 1em;
+    max-height: 5vh;
+    overflow: hidden;
+    animation-name: menu-button-straight;
+    animation-duration: 0.5s;
+}
+
+#top-menu-button-mobile-active {
+    display: inline-block;
+    position: relative;
+    left: -30%;
+    top: 2vh;
+    margin: auto;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 1.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 2em;
+    height: 1em;
+    max-height: 5vh;
+    overflow: hidden;
+    transform: rotate(90deg);
+    animation-name: menu-button-rotate;
+    animation-duration: 0.5s;
+}
+
+#main-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#main-title-logo::before {
+    position: absolute;
+    content: "PROJECT.D";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.2vh;
+    left: -0.2vw;
+    z-index: 2;
+}
+
+.title-buttons {
+    width: 100%;
+    height: 15vw;
+    border-image: linear-gradient(to right, rgba(125, 125, 125, 0.3), rgba(125, 125, 125, 125), rgba(125, 125, 125, 0.3)) 1;
+    border-width: 1px;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    background: linear-gradient(to right, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.01));
+}
+.title-buttons:hover {
+    transition: background 2s ease-in-out;
+    background: linear-gradient(to right, rgb(255, 0, 0, 0.5), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.001));
+}
+.title-buttons > p {
+    position: absolute;
+    color: azure;
+    margin-top: 7vw;
+    margin-left: 2vw;
+    font-size: 5vw;
+    font-family: 'Squada One';
+    letter-spacing: 0.2vw;
+    text-align: center;
+}
+
+#header-div {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1vw;
+    min-width:  1vw;
+    height: 16vw;
+    border-bottom: 1px solid white;
+    animation-name: header-retract;
+    animation-duration: 0.5s;
+    overflow: hidden;
+
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+#header-div-active {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    min-width:  1vw;
+    border-bottom: 1px solid white;
+    height: 65vw;
+    animation-name: header-open;
+    animation-duration: 0.5s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+body {
+    display: block;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+
+    background-image: url('Images/light-streaks.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.map-container {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    display: none;
+    opacity: 0;
+    top: -170vh;
+    left: -14vw;
+    width: 46vw;
+    height: 45vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+#about-link {
+    display: none;
+}
+
+#gunma-province-data-m {
+    display: none;
+}
+#tochigi-province-data-m {
+    display: none;
+}
+#ibaraki-province-data-m {
+    display: none;
+}
+#chiba-province-data-m {
+    display: none;
+}
+#saitama-province-data-m {
+    display: none;
+}
+#tokyo-province-data-m {
+    display: none;
+}
+#kanagawa-province-data-m {
+    display: none;
+}
+
+#province-list-m {
+    display: none;
+}
+#cars-list-m {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(172, 0, 0);
+    border-radius: 5px;
+    width: 9px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(100, 0, 0);
+}
+
+
+
+@keyframes menu-button-rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(90deg);}
+}
+@keyframes menu-button-straight {
+    from {transform: rotate(90deg);}
+    to {transform: rotate(00deg);}
+}
+
+@keyframes header-open {
+    from {height: 16vw;}
+    to {height: 65vw;}
+}
+@keyframes header-retract {
+    from {height: 65vw;}
+    to {height: 16vw;}
+}
