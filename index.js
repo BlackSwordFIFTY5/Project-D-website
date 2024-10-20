@@ -1,13 +1,40 @@
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    // true for mobile device
-    document.getElementById("style").setAttribute('href', 'index-mobile.css');
-    document.getElementById("script").setAttribute('src', 'index-mobile.js');
-} else {
-    // false for not mobile device
-    document.getElementById("style").setAttribute('href', 'index.css');
-    document.getElementById("script").setAttribute('src', 'index.js');
+// Function to load the appropriate JS file based on device type
+function loadScript(src) {
+    // Remove the existing script if it exists
+    const existingScript = document.getElementById('dynamic-script');
+    if (existingScript) {
+        existingScript.parentNode.removeChild(existingScript);
+    }
+
+    // Create a new script element
+    const script = document.createElement('script');
+    script.src = src;
+    script.id = 'dynamic-script';
+    script.async = true; // Optional: load the script asynchronously
+
+    // Append the new script to the body or head
+    document.body.appendChild(script);
 }
-  
+
+// Check device type and load appropriate files
+if (isMobileDevice()) {
+    // Change CSS file
+    document.getElementById('style').href = 'index-mobile.css';
+    // Load mobile JS file
+    loadScript('index-mobile.js');
+} else {
+    // Change CSS file
+    document.getElementById('style').href = 'index.css';
+    // Load regular JS file
+    loadScript('index.js');
+}
+
+// Sample function to determine if the device is mobile
+function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+
 
 function toggleProvinceData(targetProvince) {
 
