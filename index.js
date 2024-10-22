@@ -77,7 +77,12 @@ function toggleProvinceData(targetProvince) {
             }
         })
     }
+}
 
+function provinceLoaded(province) {
+    document.getElementById(`${province}-area-active`).addEventListener('load', function () {
+        document.getElementById('loading').style.display = 'none';
+    })
 }
 
 
