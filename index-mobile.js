@@ -5,7 +5,7 @@ function loadScript(src) {
     if (existingScript) {
         existingScript.parentNode.removeChild(existingScript);
     }
-
+ 
     // Create a new script element
     const script = document.createElement('script');
     script.src = src;
@@ -95,6 +95,7 @@ backButtonM.forEach(function (button) {
     })
 })
 
+
 const backButtonPM = document.querySelectorAll('#back-button-p-m');
 
 backButtonPM.forEach(function (button) {
@@ -163,3 +164,9 @@ document.getElementById("kanagawa-button-m").addEventListener('click', function(
 
     document.getElementById("kanagawa-province-data-m").style.display = 'block';
 })
+
+document.getElementById("barrier").addEventListener('click', function() {
+    // Get the current number from the textContent, parse it as an integer, increment by 1, and then set the new value
+    var currentNumber = parseInt(document.getElementById("blogs-number").textContent);
+    document.getElementById("blogs-number").textContent = currentNumber + 1;
+});
