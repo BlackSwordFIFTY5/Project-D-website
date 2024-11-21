@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>Kanagawa Prefecture - PROJECT.D</title>
+    <link id="style" rel="stylesheet"  href="index.css">
+    <link rel="icon" href="Images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script id="script" src="index.js" defer></script>
+</head>
+<body> 
+    <div id="loading">Loading...</div>
+    <div id="background-mobile"></div>
+    <div id="background-desktop"></div>
+
+    <header>
+        <div id="header-div">  <!-- This div will house the logo and the title buttons-->
+            <span id="top-menu-button-mobile">
+                <div id="menu-svg-box">
+                    <svg version="1.1" id="Capa-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.426 283.426" xml:space="preserve" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <rect x="0" y="40.84" style="fill:#ffffff;" width="283.426" height="47.735"></rect> <rect x="0" y="117.282" style="fill:#ffffff;" width="283.426" height="47.735"></rect> <rect x="0" y="194.851" style="fill:#ffffff;" width="283.426" height="47.735"></rect> </g> </g></svg>
+                </div>
+            </span>
+            <h1 id="kanagawa-title-logo">
+                KANAGAWA
+            </h1>
+            <div id="title-menu">
+                <div id="main-menu-m">
+                    <a href="index.html">
+                        <div class="title-buttons" id="menu-button-m">
+                            <p>MAIN MENU</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="province-button-m">
+                        <p>PROVINCES</p>
+                    </div>
+                    <div class="title-buttons" id="cars-button-m">
+                        <p>CARS</p>
+                    </div>
+                    <a href="blogs.html">
+                        <div class="title-buttons" id="blog-button-m">
+                            <p>BLOGS</p>
+                        </div>
+                    </a>
+                    <a href="about-us.html">
+                        <div class="title-buttons">
+                            <p>ABOUT <i><b>PROJECT.D</b></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div id="province-list-m">
+                    <div class="title-buttons" id="gunma-button-m">
+                        <p>GUNMA</p>
+                    </div>
+                    <div class="title-buttons" id="tochigi-button-m">
+                        <p>TOCHIGI</p>
+                    </div>
+                    <div class="title-buttons" id="saitama-button-m">
+                        <p>SAITAMA</p>
+                    </div>
+                    <div class="title-buttons" id="ibaraki-button-m">
+                        <p>IBARAKI</p>
+                    </div>
+                    <div class="title-buttons" id="chiba-button-m">
+                        <p>CHIBA</p>
+                    </div>
+                    <div class="title-buttons" id="tokyo-button-m">
+                        <p>TOKYO</p>
+                    </div>
+                    <div class="title-buttons" id="kanagawa-button-m">
+                        <p>KANAGAWA</p>
+                    </div>
+                    <div class="title-buttons" id="back-button-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="cars-list-m">
+                    <div class="title-buttons" id="ae86-button-m">
+                        <p>TOYOTA AE86 TRUENO</p>
+                    </div>
+                    <div class="title-buttons" id="rx7fd-button-m">
+                        <p>MAZDA RX7 (FD3S)</p>
+                    </div>
+                    <div class="title-buttons" id="rx7fc-button-m">
+                        <p>MAZDA RX7 (FC3S)</p>
+                    </div>
+                    <div class="title-buttons" id="back-button-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+                
+                <div id="gunma-province-data-m">
+                    <a href="gunma.html#akina-section">    
+                        <div class="title-buttons" id="akina-track-m">
+                            <p>MOUNT AKINA</p>
+                        </div>
+                    </a>
+                    <a href="gunma.html#akagi-section">    
+                        <div class="title-buttons" id="akagi-track-m">
+                            <p>MOUNT AKAGI</p>
+                        </div>
+                    </a>
+                    <a href="gunma.html#myogi-section">    
+                        <div class="title-buttons" id="myogi-track-m">
+                            <p>MOUNT MYOGI</p>
+                        </div>
+                    </a>
+                    <a href="gunma.html#usui-section">    
+                        <div class="title-buttons" id="usui-track-m">
+                            <p>MOUNT USUI</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="tochigi-province-data-m">
+                    <a href="tochigi.html#momiji-section">    
+                        <div class="title-buttons" id="momiji-track-m">
+                            <p>MOMIJI LINE</p>
+                        </div>
+                    </a>
+                    <a href="tochigi.html#irohazaka-section">    
+                        <div class="title-buttons" id="irohazaka-track-m">
+                            <p>IROHAZAKA</p>
+                        </div>
+                    </a>
+                    <a href="tochigi.html#enna-skyline-section">    
+                        <div class="title-buttons" id="enna-skyline-track-m">
+                            <p>ENNA SKYLINE</p>
+                        </div>
+                    </a>
+                    <a href="tochigi.html#happogahara-section">    
+                        <div class="title-buttons" id="happogahara-track-m">
+                            <p>HAPPOGAHARA</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="ibaraki-province-data-m">
+                    <a href="ibaraki.html#tsukuba-section">    
+                        <div class="title-buttons" id="tsukuba-track-m">
+                            <p>TSUKUBA</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="chiba-province-data-m">
+                    <a href="chiba.html">    
+                        <div class="title-buttons" id="chiba-track-m">
+                            <p>CHIBA TRACK</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="saitama-province-data-m">
+                    <a href="saitama.html#shomaru-section">    
+                        <div class="title-buttons" id="shomaru-track-m">
+                            <p>SHOMARU PASS</p>
+                        </div>
+                    </a>
+                    <a href="saitama.html#sadamine-section">    
+                        <div class="title-buttons" id="sadamine-track-m">
+                            <p>SADAMINE PASS</p>
+                        </div>
+                    </a>
+                    <a href="saitama.html#maze-section">    
+                        <div class="title-buttons" id="maze-track-m">
+                            <p>MAZE PASS</p>
+                        </div>
+                    </a>
+                    <a href="saitama.html#tsuchisaka-section">    
+                        <div class="title-buttons" id="tsuchisaka-track-m">
+                            <p>TSUCHISAKA</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="tokyo-province-data-m">
+                    <a href="tokyo.html">    
+                        <div class="title-buttons" id="tokyo-track-m">
+                            <p>TOKYO TRACK</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="kanagawa-province-data-m">
+                    <a href="kanagawa.html#nagao-sectiom">    
+                        <div class="title-buttons" id="nagao-track-m">
+                            <p>NAGAO PASS</p>
+                        </div>
+                    </a>
+                    <a href="kanagawa.html#nanamagari-sectiom">    
+                        <div class="title-buttons" id="nanamagari-track-m">
+                            <p>NANAMAGARI</p>
+                        </div>
+                    </a>
+                    <a href="kanagawa.html#tsubaki-sectiom">    
+                        <div class="title-buttons" id="tsubaki-track-m">
+                            <p>TSUBAKI LINE</p>
+                        </div>
+                    </a>
+                    <a href="kanagawa.html#yabitsu-sectiom">    
+                        <div class="title-buttons"  id="yabitsu-track-m">
+                            <p>YABITSU</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="background-image">
+        <div class="article" id="about-page">
+           
+            <p><b>Kanagawa</b></p>
+            <p>Kanagawa is a place where the drive always feels like a challenge. Just south of Tokyo, the prefecture blends the pulse of the city with the thrill of mountain roads, offering a driving experience that never gets boring. In cities like Yokohama, the streets are wide and busy, and you can feel the tension of urban speed as you weave through traffic, trying to outmaneuver everyone else. But it’s when you head into the hills and coastal routes that the real excitement begins.</p>
+            <p>The Hakone Turnpike is one of the toughest in Kanagawa—its steep climbs and sharp corners make it a place for those who know how to handle a car. The road twists through dense forests, and every hairpin feels like a test. If you’re not careful, the tight turns can catch you off guard, forcing you to find that perfect balance between speed and control. The climb is relentless, and there’s no room for mistakes. Master the pass, though, and you know you've proven yourself.</p>
+            <p>Heading south along the coast, the roads hugging Sagami Bay and the Izu Peninsula offer a different challenge. These roads are narrow, with blind corners that demand precision and focus, but the views of the ocean and Mount Fuji in the distance add to the intensity. The risk of slipping on the corners is always there, but when the road opens up, it’s an adrenaline rush like no other.</p>
+            <p>Further inland, the quiet mountain roads around Atsugi and Hadano offer a different kind of challenge—narrow, winding, and often slippery. These roads are less traveled, but they demand just as much focus, with each turn testing your reflexes and car control. Kanagawa’s roads are as varied as they come, with every corner offering a new test, and every stretch of highway rewarding those who can master it. Whether it's the urban chaos of Yokohama or the winding mountain passes, Kanagawa is a prefecture where only the most skilled drivers thrive</p>
+
+            <p id="yabitsu-section"><b>Yabitsu</b></p>
+            <img src="Images/yabitsu-track.png" alt="">
+            <p>Yabitsu (ヤビツ峠) is 761 meters above sea level, located in Kanagawa, Japan. It was the home course of Team 246. The course is known for having multiple points at which one of the two lanes suddenly merge into one </p>
+            <p><b>Important Battles</b></p>
+           <table>
+            <tr>
+                <th><p>Racers</p></th>
+                <th><p>Cars</p></th>
+                <th><p>Specialization</p></th>
+            </tr>
+            <tr>
+                <td><p>Takumi Fujiwara vs Satoshi Omiya</p></td>
+                <td><p>AE86 vs Mazda Roadster RS</p></td>
+                <td><p>Downhill</p></td>
+            </tr>
+            <tr>
+                <td><p>Keisuke Takahashi vs Kobayakawa</p></td>
+                <td><p>FD3S vs Lan Evo VII</p></td>
+                <td><p>Uphill</p></td>
+            </tr>
+           </table>
+           <p><b>Extra information</b></p>
+            <p>Yabitsu Pass, located in the mountains of Kanagawa Prefecture, is one of the most well-known and challenging roads for driving enthusiasts in the region. Offering a mixture of long, sweeping curves and tight hairpins, the pass has become a favorite for those seeking to push their cars to the limit while navigating one of Japan’s iconic mountain routes. With its steep inclines and unpredictable terrain, Yabitsu is not a place for the faint of heart; it demands precision, focus, and a solid understanding of your car’s handling.</p>
+            <p>The road is narrow and winding, cutting through dense forests and steep hills. The constant elevation changes add an extra layer of complexity, as the tight corners come at you quickly and the grades vary significantly, often making it difficult to maintain speed or traction. The surface is generally good but can become slippery after rain, and debris from the surrounding forest can also present an unexpected challenge.</p>
+            <p>What makes Yabitsu so appealing to experienced drivers is the rhythm of the road. Every turn demands attention, whether it’s a sharp hairpin or a long, sweeping curve. The pass requires you to be in constant tune with the car, adjusting throttle, steering, and braking to maintain control. The key is to know the road well—anticipating the next turn and finding the right balance between speed and stability. While it may not have the sheer danger of some other passes, Yabitsu's unrelenting series of curves offers a real test of skill and car control.</p>
+            <p>But perhaps the true thrill of Yabitsu is how it builds. As you gain confidence with each turn, the road becomes a dance—a symbiotic connection between you and the machine. With every corner you master, you start to feel the rhythm of the pass, the engine’s growl echoing off the cliffs, and the tires gripping the pavement with a perfect balance. For those who’ve driven Yabitsu enough, it feels almost like an extension of the road itself—a challenge to be met with a steady hand and a sharp mind.</p>
+            <p>Whether you're chasing the perfect time or simply enjoying the drive, Yabitsu Pass is a road that tests your mettle, forcing you to focus on every detail. It’s a place where drivers who know their limits can push them further, gaining satisfaction not from raw speed, but from the mastery of the road. Conquer Yabitsu, and you’ve earned the respect of any true enthusiast.</p>
+
+            <p id="nagao-section"><b>Nagao Pass</b></p>
+            <img src="Images/nagao-track.jpg" alt="">
+            <p>Nagao (長尾) is the home course of Racing Team Katagiri Street Version. It spans through Hakone and Gotemba, in the Kanagawa and Shizuoka prefectures. It is also where Takumi had a rematch with Kai (after the latter lost to the former in Irohazaka) and Keisuke had his race against Minagawa.</p>
+            <p><b>Important Battles</b></p>
+            <table>
+             <tr>
+                 <th><p>Racers</p></th>
+                 <th><p>Cars</p></th>
+                 <th><p>Specialization</p></th>
+             </tr>
+             <tr>
+                 <td><p>Takumi Fujiwara vs Kai Kogashiwa</p></td>
+                 <td><p>AE86 vs Toyota MR-S</p></td>
+                 <td><p>Downhill</p></td>
+             </tr>
+             <tr>
+                 <td><p>Keisuke Takahashi vs Hideo Minagawa</p></td>
+                 <td><p>FD3S vs Supra MKIV</p></td>
+                 <td><p>Uphill</p></td>
+             </tr>
+            </table>
+            <p><b>Extra information</b></p>
+            <p>Nagao Pass, located in the mountainous regions of Kanagawa Prefecture, is one of those roads that quickly earns the respect of anyone who dares to take it on. This narrow, twisting route is often overlooked by casual drivers, but for those who know its reputation, it’s a true test of skill and focus. The pass climbs steeply through dense forests, with sharp hairpin turns and blind corners that demand total control and precision.</p>
+            <p>The road surface can be unpredictable, with sudden dips, gravel patches, and occasional loose debris, making it especially tricky when weather conditions change. On dry days, it’s a fast-paced challenge, requiring quick shifts and calculated throttle control to maintain speed while navigating the tight bends. On rainy days, however, Nagao transforms into a far more dangerous route, as the risk of sliding on slick corners increases, and every turn feels even more precarious.</p>
+            <p>What makes Nagao Pass particularly challenging is its combination of tight corners and steep grades, which demand both technique and patience. There are moments where the road straightens, allowing drivers to open up the throttle, but it’s never for long. Before you know it, the next curve comes up fast, requiring you to adjust your speed and line with precision. It’s a road that rewards those who can anticipate the next move, where knowing the road and your car’s limits is key to conquering it.</p>
+            <p>Nagao Pass is a favorite for those seeking a more technical challenge. It’s not about the longest straightaways or the fastest speeds; it’s about mastering every turn, feeling the car grip the road, and anticipating the changes in elevation. Conquering this pass isn’t just about racing to the finish—it’s about the satisfaction of navigating a road that demands respect, and knowing you’ve come out on top.</p>
+
+            <p id="nanamagari-section"><b>Nanamagari</b></p>
+            <img src="Images/nanamagari-track.jpg" alt="">
+            <p>Nanamagari (七曲り) is the home course of Team Spiral. It is part of the Old Tōkaidō that spans Hakone and Odawara in the Kanagawa prefecture. It is perhaps well known for its 13 consecutive hairpins.</p>
+            <p>Project D's penultimate battle with Team Spiral was held here during the foggy post-rain weather.</p>
+            <p>Nanamagari in Japanese means 'Seven' (Nana) and 'turns' (Magari, a form of the verb Magaru, which means 'to bend') referring to the seven hairpins in the course, despite the fact that there are actually thirteen hairpins in the course.</p>
+            <p><b>Important Battles</b></p>
+            <table>
+             <tr>
+                 <th><p>Racers</p></th>
+                 <th><p>Cars</p></th>
+                 <th><p>Specialization</p></th>
+             </tr>
+             <tr>
+                 <td><p>Takumi Fujiwara vs Hiroya Okuyama</p></td>
+                 <td><p>AE86 vs Silvia S15</p></td>
+                 <td><p>Downhill</p></td>
+             </tr>
+             <tr>
+                 <td><p>Keisuke Takahashi vs Ryuji Ikeda</p></td>
+                 <td><p>FD3S vs Nissan Z33</p></td>
+                 <td><p>Uphill</p></td>
+             </tr>
+            </table>
+            <p><b>Extra information</b></p>
+            <p>The road itself is often tight and treacherous, with steep inclines and sudden drops that make it feel like the road is constantly trying to push you off balance. The high-speed sections are rare, as the constant twists demand sharp braking and controlled acceleration. It's a road that punishes those who are too aggressive, but rewards those who can stay smooth, fluid, and in tune with the rhythm of the road.</p>
+            <p>What sets Nanamagari apart is the unpredictability of each turn. You may think you know the road, but the sharpness of the curves often catches you off guard, demanding a reaction that’s almost instinctive. The turns are often blind, meaning you need to trust your experience, as well as the feel of the road beneath you. One wrong move and you could lose your line, but take it with precision, and you’ll flow from one turn to the next, feeling the car respond to every shift in direction.</p>
+            <p>On a good day, Nanamagari feels like a perfect dance between driver and road—every turn feels like an extension of yourself, every flick of the wheel an expression of control. But even the most skilled drivers know that there's no room for complacency. The pass is always there, lurking, waiting for that moment when you drop your guard, and that’s when it strikes. Whether you’re chasing the thrill of speed or the satisfaction of mastering a technical route, Nanamagari is a road that demands full attention, offering up a challenge that only the most focused and skilled can conquer.</p>
+
+            <p id="tsubaki-section"><b>Tsubaki Line</b></p>
+            <img src="Images/tsubaki-line-track.jpg" alt="">
+            <p>The Tsubaki Line (椿ライン, Tsubaki Rain) is the home course of Sidewinder. It is located in Yugawara, Kanagawa, near the Hakone Turnpike. The uphill battle (between Go Hojo and Keisuke Takahashi) and the downhill battle (between Takumi Fujiwara and Shinji Inui) happened here. It is one of the longest course at 13.1 km.</p>
+            <p>The top of the pass houses the Daikanzan Observation Deck, which connects the Tsubaki Line and the Toyo Tires Turnpike. It is also where Project D mechanics gather and tune the cars before their final battles start.</p>
+            <p><b>Important Battles</b></p>
+            <table>
+             <tr>
+                 <th><p>Racers</p></th>
+                 <th><p>Cars</p></th>
+                 <th><p>Specialization</p></th>
+             </tr>
+             <tr>
+                 <td><p>Takumi Fujiwara vs Shinji Inui</p></td>
+                 <td><p>AE86 vs AE86</p></td>
+                 <td><p>Downhill</p></td>
+             </tr>
+             <tr>
+                 <td><p>Keisuke Takahashi vs Do Hojo</p></td>
+                 <td><p>FD3S vs Honda NSX</p></td>
+                 <td><p>Uphill</p></td>
+             </tr>
+            </table>
+            <p><b>Extra information</b></p>
+            <p>The Tsubaki Line is a hidden gem among the mountain roads of Kanagawa Prefecture, a route that demands respect from anyone who dares to take it on. This narrow, twisting stretch of road, nestled in the hills near the town of Tsubaki, is infamous for its sharp corners, unpredictable elevation changes, and unforgiving surfaces. While not as well-known as some of the more famous mountain passes, the Tsubaki Line offers a unique challenge, where speed, technique, and control come together in a test of true driving skill.</p>
+            <p>The road is tight, with numerous hairpin turns that come at you fast, forcing you to adjust your line and braking with each bend. It’s a road that rewards precision, requiring drivers to balance their speed through each curve while maintaining control over the car's handling. The road surface varies, and at times it’s rough or uneven, adding an extra layer of difficulty. It’s not a place for those who rush or cut corners—every turn demands careful input, from throttle to brake to steering, to keep the car planted and moving in the right direction.</p>
+            <p>What makes the Tsubaki Line stand out is its rhythm. The route is full of sudden elevation changes, blind corners, and steep inclines, meaning there’s little room to relax. The sharp, rapid succession of turns keeps you constantly on edge, demanding quick reflexes and deep concentration. For those who know it well, the Tsubaki Line is a road that rewards experience—a place where knowing the right braking point, the right line through a corner, and the right moment to accelerate can make the difference between a smooth drive and a disaster.</p>
+            <p>In a way, the Tsubaki Line feels like a secret test, a place where only the truly skilled can conquer its every twist and turn. Whether you’re running it as a solo challenge or racing against another driver, the line is unforgiving. It’s a road that rewards finesse over brute force, where the true thrill lies not in the speed, but in the mastery of every curve, every elevation change, and every shift of the wheel. For those who can conquer it, the Tsubaki Line offers the satisfaction of knowing you’ve truly mastered one of Kanagawa’s most demanding, yet rewarding, mountain roads.</p>
+
+            <a href="index.html" id="back-link">
+                <svg width="64px" height="64px" id="back-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> </defs> <g data-name="Layer 2" id="Layer_2"> <g data-name="E421, Back, buttons, multimedia, play, stop" id="E421_Back_buttons_multimedia_play_stop"> <circle class="cls-1" cx="256" cy="256" r="246"></circle> <line class="cls-1" x1="352.26" x2="170.43" y1="256" y2="256"></line> <polyline class="cls-1" points="223.91 202.52 170.44 256 223.91 309.48"></polyline> </g> </g> </g></svg>
+                <p id="svg-text">MAIN MENU</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
