@@ -25,7 +25,7 @@
     background-size: 100%;
     z-index: 1;
 }
-
+ 
 #top-menu-button-mobile {
     display: inline-block;
     position: relative;
@@ -90,10 +90,286 @@
     background-clip: text;
     color: transparent;
     letter-spacing: 0.2em;
-    top: -0.2vh;
+    top: -0.1vh;
     left: -0.2vw;
     z-index: 2;
 }
+
+
+#about-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#about-title-logo::before {
+    position: absolute;
+    content: "ABOUT.US";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.1vh;
+    left: -0.2vw;
+    z-index: 2;
+}
+
+
+#blogs-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#blogs-title-logo::before {
+    position: absolute;
+    content: "BLOGS";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.1vh;
+    left: -0.2vw;
+    z-index: 2;
+}
+
+
+
+#gunma-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#gunma-title-logo::before {
+    position: absolute;
+    content: "GUNMA";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.1vh;
+    left: -0.1vw;
+    z-index: 2;
+}
+
+#tochigi-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#tochigi-title-logo::before {
+    position: absolute;
+    content: "TOCHIGI";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.1vh;
+    left: -0.1vw;
+    z-index: 2;
+}
+
+#ibaraki-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#ibaraki-title-logo::before {
+    position: absolute;
+    content: "IBARAKI";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.1vh;
+    left: -0.1vw;
+    z-index: 2;
+}
+
+#saitama-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#saitama-title-logo::before {
+    position: absolute;
+    content: "SAITAMA";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.1vh;
+    left: -0.1vw;
+    z-index: 2;
+}
+
+#chiba-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#chiba-title-logo::before {
+    position: absolute;
+    content: "CHIBA";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.1vh;
+    left: -0.1vw;
+    z-index: 2;
+}
+
+#tokyo-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#tokyo-title-logo::before {
+    position: absolute;
+    content: "TOKYO";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.1vh;
+    left: -0.1vw;
+    z-index: 2;
+}
+
+#kanagawa-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(2.2);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#kanagawa-title-logo::before {
+    position: absolute;
+    content: "KANAGAWA";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.1vh;
+    left: -0.1vw;
+    z-index: 2;
+}
+
+
 
 .title-buttons {
     width: 100%;
@@ -110,14 +386,17 @@
     background: linear-gradient(to right, rgb(255, 0, 0, 0.5), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.001));
 }
 .title-buttons > p {
-    position: absolute;
     color: azure;
     margin-top: 7vw;
     margin-left: 2vw;
     font-size: 5vw;
     font-family: 'Squada One';
     letter-spacing: 0.2vw;
-    text-align: center;
+    text-align: left;
+}
+
+.main-menu-m > p {
+    text-decoration: none;
 }
 
 #header-div {
@@ -126,6 +405,7 @@
     padding-right: 10%;
     padding-bottom: 1vw;
     min-width:  1vw;
+    margin-bottom: 10%;
     height: 16vw;
     border-bottom: 1px solid white;
     animation-name: header-retract;
@@ -141,15 +421,21 @@
     padding-right: 10%;
     padding-bottom: 5%;
     min-width:  1vw;
+    margin-bottom: 10%;
     border-bottom: 1px solid white;
-    height: 65vw;
+    height: 29vh;
     animation-name: header-open;
     animation-duration: 0.5s;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 
     background: transparent;
     backdrop-filter: blur(10px);
+}
+
+#title-menu {
+    overflow-y: scroll;
+    height: 20vh;
 }
 
 body {
@@ -163,8 +449,64 @@ body {
     max-height: 100vh;
 
     background-image: url('Images/light-streaks.png');
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.article {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 5%;
+    text-align: center;
+}
+.article p {
+    font-family: 'Squada One';
+    font-size: 1.5em;
+    padding: auto;
+    text-align: center;
+}
+.article img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.article button {
+    background: none;
+    border: none;
+}
+.article span p {
+    word-wrap: nowrap;
+    display: inline-block;
+}
+.article b {
+    margin-top: 10%;
+    font-size: 1.5em;
+}
+.article table, tr, td {
+    border: 1px solid #ac0000;
+    background-color: #3f3f3f;
+}
+
+.cls-1 {
+    fill:none;
+    stroke:#ffffff;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:20px;
+}
+#back-svg:hover .cls-1 {
+    stroke:#ffffff;
+}
+#svg-text {
+    color: #ffffff;
+    font-family: 'Squada One';
 }
 
 .map-container {
@@ -230,7 +572,7 @@ body {
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(172, 0, 0);
+    background-color: #ac0000;
     border-radius: 5px;
     width: 9px;
     border: 2px solid transparent;
@@ -253,9 +595,9 @@ body {
 
 @keyframes header-open {
     from {height: 16vw;}
-    to {height: 65vw;}
+    to {height: 29vh;}
 }
 @keyframes header-retract {
-    from {height: 65vw;}
+    from {height: 29vh;}
     to {height: 16vw;}
 }
