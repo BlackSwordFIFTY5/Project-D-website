@@ -20,6 +20,10 @@
     z-index: 9999;
 }
 
+a {
+    text-decoration: none;
+}
+
 #background-mobile {
     background-image: url('Images/light-streaks.png');
     background-size: 100%;
@@ -159,7 +163,7 @@
 
 
 
-#gunma-title-logo {
+#provinces-title-logo {
     position: relative;
     background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
     background-clip: text;
@@ -177,9 +181,9 @@
     margin-left: 5%;
     z-index: 2;
 }
-#gunma-title-logo::before {
+#provinces-title-logo::before {
     position: absolute;
-    content: "GUNMA";
+    content: "PROVINCES";
     background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
     background-clip: text;
     color: transparent;
@@ -189,7 +193,7 @@
     z-index: 2;
 }
 
-#tochigi-title-logo {
+#cars-title-logo {
     position: relative;
     background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
     background-clip: text;
@@ -197,7 +201,7 @@
     font-size: 6vw;
     display: inline-block;
     text-align: center;
-    transform: skew(-25deg) scaleY(1) scale(2.2);
+    transform: skew(-25deg) scaleY(1) scale(1.5);
     font-family: 'Squada One';
     font-weight: bold;
     letter-spacing: 0.2em;
@@ -207,165 +211,15 @@
     margin-left: 5%;
     z-index: 2;
 }
-#tochigi-title-logo::before {
+#cars-title-logo::before {
     position: absolute;
-    content: "TOCHIGI";
+    content: "CARS";
     background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
     background-clip: text;
     color: transparent;
     letter-spacing: 0.2em;
-    top: -0.1vh;
-    left: -0.1vw;
-    z-index: 2;
-}
-
-#ibaraki-title-logo {
-    position: relative;
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: rgb(194, 194, 194);
-    font-size: 6vw;
-    display: inline-block;
-    text-align: center;
-    transform: skew(-25deg) scaleY(1) scale(2.2);
-    font-family: 'Squada One';
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    left: -5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    z-index: 2;
-}
-#ibaraki-title-logo::before {
-    position: absolute;
-    content: "IBARAKI";
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: transparent;
-    letter-spacing: 0.2em;
-    top: -0.1vh;
-    left: -0.1vw;
-    z-index: 2;
-}
-
-#saitama-title-logo {
-    position: relative;
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: rgb(194, 194, 194);
-    font-size: 6vw;
-    display: inline-block;
-    text-align: center;
-    transform: skew(-25deg) scaleY(1) scale(2.2);
-    font-family: 'Squada One';
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    left: -5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    z-index: 2;
-}
-#saitama-title-logo::before {
-    position: absolute;
-    content: "SAITAMA";
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: transparent;
-    letter-spacing: 0.2em;
-    top: -0.1vh;
-    left: -0.1vw;
-    z-index: 2;
-}
-
-#chiba-title-logo {
-    position: relative;
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: rgb(194, 194, 194);
-    font-size: 6vw;
-    display: inline-block;
-    text-align: center;
-    transform: skew(-25deg) scaleY(1) scale(2.2);
-    font-family: 'Squada One';
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    left: -5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    z-index: 2;
-}
-#chiba-title-logo::before {
-    position: absolute;
-    content: "CHIBA";
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: transparent;
-    letter-spacing: 0.2em;
-    top: -0.1vh;
-    left: -0.1vw;
-    z-index: 2;
-}
-
-#tokyo-title-logo {
-    position: relative;
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: rgb(194, 194, 194);
-    font-size: 6vw;
-    display: inline-block;
-    text-align: center;
-    transform: skew(-25deg) scaleY(1) scale(2.2);
-    font-family: 'Squada One';
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    left: -5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    z-index: 2;
-}
-#tokyo-title-logo::before {
-    position: absolute;
-    content: "TOKYO";
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: transparent;
-    letter-spacing: 0.2em;
-    top: -0.1vh;
-    left: -0.1vw;
-    z-index: 2;
-}
-
-#kanagawa-title-logo {
-    position: relative;
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: rgb(194, 194, 194);
-    font-size: 6vw;
-    display: inline-block;
-    text-align: center;
-    transform: skew(-25deg) scaleY(1) scale(2.2);
-    font-family: 'Squada One';
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    left: -5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 5%;
-    z-index: 2;
-}
-#kanagawa-title-logo::before {
-    position: absolute;
-    content: "KANAGAWA";
-    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
-    background-clip: text;
-    color: transparent;
-    letter-spacing: 0.2em;
-    top: -0.1vh;
-    left: -0.1vw;
+    top: -0.2vh;
+    left: -0.2vw;
     z-index: 2;
 }
 
@@ -395,8 +249,35 @@
     text-align: left;
 }
 
+.title-buttons-active {
+    width: 100%;
+    height: 15vw;
+    border-image: linear-gradient(to right, rgba(125, 125, 125, 0.3), rgba(125, 125, 125, 125), rgba(125, 125, 125, 0.3)) 1;
+    border-width: 1px;
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    background: linear-gradient(to right, rgb(255, 0, 0, 0.5), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.001));
+}
+.title-buttons-active > p {
+    color: azure;
+    margin-top: 7vw;
+    margin-left: 2vw;
+    font-size: 5vw;
+    font-family: 'Squada One';
+    letter-spacing: 0.2vw;
+    text-align: left;
+}
+
 .main-menu-m > p {
     text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
 }
 
 #header-div {
@@ -454,10 +335,17 @@ body {
     background-repeat: no-repeat;
 }
 
+
+#sidenav {
+    display: none;
+}
+
+
 .article {
     width: 80%;
     height: fit-content;
     margin: auto;
+    margin-top: 20%;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -490,6 +378,48 @@ body {
     font-size: 1.5em;
 }
 .article table, tr, td {
+    border: 1px solid #ac0000;
+    background-color: #3f3f3f;
+}
+
+
+.section {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 20%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 5%;
+    text-align: center;
+}
+.section p {
+    font-family: 'Squada One';
+    font-size: 1.5em;
+    padding: auto;
+    text-align: center;
+}
+.section img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.section button {
+    background: none;
+    border: none;
+}
+.section span p {
+    word-wrap: nowrap;
+    display: inline-block;
+}
+.section b {
+    margin-top: 10%;
+    font-size: 1.5em;
+}
+.section table, tr, td {
     border: 1px solid #ac0000;
     background-color: #3f3f3f;
 }
