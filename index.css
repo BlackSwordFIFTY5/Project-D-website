@@ -3,6 +3,10 @@
     src: url(Fonts/Squada_One/SquadaOne-Regular.ttf);
 }
 
+a {
+    text-decoration: none;
+}
+
 #loading {
     position: fixed;
     top: 0;
@@ -113,7 +117,7 @@
 
 
 
-#gunma-title-logo {
+#provinces-title-logo {
     position: relative;
     background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
     background-clip: text;
@@ -131,9 +135,9 @@
     margin-left: 5%;
     z-index: 2;
 }
-#gunma-title-logo::before {
+#provinces-title-logo::before {
     position: absolute;
-    content: "GUNMA";
+    content: "PROVINCES";
     background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
     background-clip: text;
     color: transparent;
@@ -323,6 +327,36 @@
     z-index: 2;
 }
 
+#cars-title-logo {
+    position: relative;
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: rgb(194, 194, 194);
+    font-size: 6vw;
+    display: inline-block;
+    text-align: center;
+    transform: skew(-25deg) scaleY(1) scale(1.5);
+    font-family: 'Squada One';
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    left: -5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    z-index: 2;
+}
+#cars-title-logo::before {
+    position: absolute;
+    content: "CARS";
+    background: linear-gradient(to bottom, rgb(170, 170, 170), rgb(63, 63, 63));
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2em;
+    top: -0.2vh;
+    left: -0.2vw;
+    z-index: 2;
+}
+
 
 
 #header-div {
@@ -364,6 +398,48 @@ body {
 }
 
 
+
+#sidenav {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 20px;
+}
+#sidenav p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    font-family: 'Squada One';
+    margin: auto;
+    cursor: default;
+}
+.sidenav div {
+    padding-left: 10px;
+}
+.sidenav-button{
+    display: block;
+    cursor: pointer;
+}
+#sidenav .sidenav-button:hover {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.001));
+    cursor: pointer;
+}
+.sidenav-button-active {
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.001));
+    cursor: pointer;
+}
+
+
+
 .article {
     width: 90vw;
     height: fit-content;
@@ -378,6 +454,7 @@ body {
     font-family: 'Squada One';
     font-size: 2.5em;
     text-align: center;
+    color: white;
 }
 .article img {
     display: block;
@@ -396,6 +473,8 @@ body {
 .article span p {
     word-wrap: nowrap;
     display: inline-block;
+    color: white;
+
 }
 .article b {
     margin-top: 10%;
@@ -408,16 +487,63 @@ body {
     margin: auto;
 }
 
+
+.section {
+    width: 90vw;
+    height: fit-content;
+    margin-left: 160px; 
+    padding-bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    text-align: center;
+}
+.section p {
+    font-family: 'Squada One';
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+}
+.section img {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.section > svg {
+    stroke: black;
+}
+.section button {
+    background: none;
+    border: none;
+}
+.section span p {
+    word-wrap: nowrap;
+    display: inline-block;
+}
+.section b {
+    margin-top: 10%;
+    font-size: 1.5em;
+}
+.section table, tr, td {
+    border: 1px solid #ac0000;
+    background-color: rgba(119, 119, 119, 0.123);
+    backdrop-filter: blur(15px);
+    margin: auto;
+}
+
+
 .cls-1 {
     fill:none;
-    stroke:#000000;
+    stroke:white;
     stroke-linecap:round;
     stroke-linejoin:round;
     stroke-width:20px;
     transition: 0.5s;
 }
 #back-link:hover .cls-1 {
-    stroke:#ffffff;
+    stroke:black;
 }
 #svg-text {
     opacity: 0%;
@@ -866,5 +992,55 @@ body {
     display: none;
 }
 #cars-list {
+    display: none;
+}
+
+
+
+#gunma-tracks {
+    display: none;
+}
+#tochigi-tracks {
+    display: none;
+}
+#saitama-tracks {
+    display: none;
+}
+#ibaraki-tracks {
+    display: none;
+}
+#kanagawa-tracks {
+    display: none;
+}
+
+#gunma-section {
+    display: none;
+}
+#tochigi-section {
+    display: none;
+}
+#saitama-section {
+    display: none;
+}
+#ibaraki-section {
+    display: none;
+}
+#kanagawa-section {
+    display: none;
+}
+#tokyo-section {
+    display: none;
+}
+#chiba-section {
+    display: none;
+}
+
+#ae86-section {
+    display: none;
+}
+#fd3s-section {
+    display: none;
+}
+#fc3s-section {
     display: none;
 }
