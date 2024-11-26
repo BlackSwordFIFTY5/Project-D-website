@@ -190,7 +190,7 @@ if (document.getElementById('barrier')){
 function removeSections() {
 
     const sections = ['gunma', 'tochigi', 'saitama', 'ibaraki', 'kanagawa', 'chiba', 'tokyo'];
-    const provinces = ['akina', 'akagi', 'myogi', 'usui', 'momiji', 'irohazaka', 'enna-skyline', 'happogahara', 'shomaru', 'sadamine', 'maze', 'tsuchisaka', 'tsukuba', 'yabitsu', 'nagao', 'nanamagari','tsubaki'];
+    const provinces = ['akina', 'akagi', 'myogi', 'usui', 'momiji', 'irohazaka', 'enna-skyline', 'happogahara', 'shomaru', 'sadamine', 'maze', 'tsuchisaka', 'tsukuba', 'yabitsu', 'nagao', 'nanamagari','tsubaki', 'chiba', 'tokyo'];
 
     sections.forEach(function (section) {
         document.getElementById(`${section}-section`).style.display = 'none';
@@ -393,6 +393,24 @@ $("#tsubaki-track-m").on('click', function(e) {
         togglePrefecture('tsubaki');
     } else {
         sessionStorage.setItem('province', 'tsubaki');
+        window.location.replace('provinces.html');
+    }
+});
+$("#chiba-track-m").on('click', function(e) {
+    e.preventDefault();
+    if (fileName === 'provinces.html') {
+        togglePrefecture('chiba');
+    } else {
+        sessionStorage.setItem('province', 'chiba');
+        window.location.replace('provinces.html');
+    }
+});
+$("#tokyo-track-m").on('click', function(e) {
+    e.preventDefault();
+    if (fileName === 'provinces.html') {
+        togglePrefecture('tokyo');
+    } else {
+        sessionStorage.setItem('province', 'tokyo');
         window.location.replace('provinces.html');
     }
 });
