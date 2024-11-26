@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <title>CARS - PROJECT.D</title>
+    <link id="style" rel="stylesheet"  href="index.css">
+    <link rel="icon" href="Images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script id="script" src="index.js" defer></script>
+</head>
+<body> 
+    <div id="loading">Loading...</div>
+    <div id="background-mobile"></div>
+    <div id="background-desktop"></div>
+
+    <header>
+        <div id="header-div">  <!-- This div will house the logo and the title buttons-->
+            <span id="top-menu-button-mobile">
+                <div id="menu-svg-box">
+                    <svg version="1.1" id="Capa-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 283.426 283.426" xml:space="preserve" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <rect x="0" y="40.84" style="fill:#ffffff;" width="283.426" height="47.735"></rect> <rect x="0" y="117.282" style="fill:#ffffff;" width="283.426" height="47.735"></rect> <rect x="0" y="194.851" style="fill:#ffffff;" width="283.426" height="47.735"></rect> </g> </g></svg>
+                </div>
+            </span>
+            <h1 id="cars-title-logo">
+                CARS
+            </h1>
+            <div id="title-menu">
+                <div id="main-menu-m">
+                    <a href="index.html">
+                        <div class="title-buttons" id="menu-button-m">
+                            <p>MAIN MENU</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="province-button-m">
+                        <p>PROVINCES</p>
+                    </div>
+                    <div class="title-buttons" id="cars-button-m">
+                        <p>CARS</p>
+                    </div>
+                    <a href="blogs.html">
+                        <div class="title-buttons" id="blog-button-m">
+                            <p>BLOGS</p>
+                        </div>
+                    </a>
+                    <a href="about-us.html">
+                        <div class="title-buttons">
+                            <p>ABOUT <i><b>PROJECT.D</b></i></p>
+                        </div>
+                    </a>
+                </div>
+                <div id="province-list-m">
+                    <div class="title-buttons" id="gunma-button-m">
+                        <p>GUNMA</p>
+                    </div>
+                    <div class="title-buttons" id="tochigi-button-m">
+                        <p>TOCHIGI</p>
+                    </div>
+                    <div class="title-buttons" id="saitama-button-m">
+                        <p>SAITAMA</p>
+                    </div>
+                    <div class="title-buttons" id="ibaraki-button-m">
+                        <p>IBARAKI</p>
+                    </div>
+                    <div class="title-buttons" id="chiba-button-m">
+                        <p>CHIBA</p>
+                    </div>
+                    <div class="title-buttons" id="tokyo-button-m">
+                        <p>TOKYO</p>
+                    </div>
+                    <div class="title-buttons" id="kanagawa-button-m">
+                        <p>KANAGAWA</p>
+                    </div>
+                    <div class="title-buttons" id="back-button-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="cars-list-m">
+                    <div class="title-buttons" id="ae86-button-m">
+                        <p>TOYOTA AE86 TRUENO</p>
+                    </div>
+                    <div class="title-buttons" id="fd3s-button-m">
+                        <p>MAZDA RX7 (FD3S)</p>
+                    </div>
+                    <div class="title-buttons" id="fc3s-button-m">
+                        <p>MAZDA RX7 (FC3S)</p>
+                    </div>
+                    <div class="title-buttons" id="back-button-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+                
+                <div id="gunma-province-data-m">
+                    <a href="gunma.html#akina-section">    
+                        <div class="title-buttons" id="akina-track-m">
+                            <p>MOUNT AKINA</p>
+                        </div>
+                    </a>
+                    <a href="gunma.html#akagi-section">    
+                        <div class="title-buttons" id="akagi-track-m">
+                            <p>MOUNT AKAGI</p>
+                        </div>
+                    </a>
+                    <a href="gunma.html#myogi-section">    
+                        <div class="title-buttons" id="myogi-track-m">
+                            <p>MOUNT MYOGI</p>
+                        </div>
+                    </a>
+                    <a href="gunma.html#usui-section">    
+                        <div class="title-buttons" id="usui-track-m">
+                            <p>MOUNT USUI</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="tochigi-province-data-m">
+                    <a href="tochigi.html#momiji-section">    
+                        <div class="title-buttons" id="momiji-track-m">
+                            <p>MOMIJI LINE</p>
+                        </div>
+                    </a>
+                    <a href="tochigi.html#irohazaka-section">    
+                        <div class="title-buttons" id="irohazaka-track-m">
+                            <p>IROHAZAKA</p>
+                        </div>
+                    </a>
+                    <a href="tochigi.html#enna-skyline-section">    
+                        <div class="title-buttons" id="enna-skyline-track-m">
+                            <p>ENNA SKYLINE</p>
+                        </div>
+                    </a>
+                    <a href="tochigi.html#happogahara-section">    
+                        <div class="title-buttons" id="happogahara-track-m">
+                            <p>HAPPOGAHARA</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="ibaraki-province-data-m">
+                    <a href="ibaraki.html#tsukuba-section">    
+                        <div class="title-buttons" id="tsukuba-track-m">
+                            <p>TSUKUBA</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="chiba-province-data-m">
+                    <a href="chiba.html">    
+                        <div class="title-buttons" id="chiba-track-m">
+                            <p>CHIBA TRACK</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="saitama-province-data-m">
+                    <a href="saitama.html#shomaru-section">    
+                        <div class="title-buttons" id="shomaru-track-m">
+                            <p>SHOMARU PASS</p>
+                        </div>
+                    </a>
+                    <a href="saitama.html#sadamine-section">    
+                        <div class="title-buttons" id="sadamine-track-m">
+                            <p>SADAMINE PASS</p>
+                        </div>
+                    </a>
+                    <a href="saitama.html#maze-section">    
+                        <div class="title-buttons" id="maze-track-m">
+                            <p>MAZE PASS</p>
+                        </div>
+                    </a>
+                    <a href="saitama.html#tsuchisaka-section">    
+                        <div class="title-buttons" id="tsuchisaka-track-m">
+                            <p>TSUCHISAKA</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="tokyo-province-data-m">
+                    <a href="tokyo.html">    
+                        <div class="title-buttons" id="tokyo-track-m">
+                            <p>TOKYO TRACK</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+    
+                <div id="kanagawa-province-data-m">
+                    <a href="kanagawa.html#nagao-sectiom">    
+                        <div class="title-buttons" id="nagao-track-m">
+                            <p>NAGAO PASS</p>
+                        </div>
+                    </a>
+                    <a href="kanagawa.html#nanamagari-sectiom">    
+                        <div class="title-buttons" id="nanamagari-track-m">
+                            <p>NANAMAGARI</p>
+                        </div>
+                    </a>
+                    <a href="kanagawa.html#tsubaki-sectiom">    
+                        <div class="title-buttons" id="tsubaki-track-m">
+                            <p>TSUBAKI LINE</p>
+                        </div>
+                    </a>
+                    <a href="kanagawa.html#yabitsu-sectiom">    
+                        <div class="title-buttons"  id="yabitsu-track-m">
+                            <p>YABITSU</p>
+                        </div>
+                    </a>
+                    <div class="title-buttons" id="back-button-p-m">
+                        <p><b>BACK</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="background-image">
+
+        <div id="sidenav">
+
+            <a href="index.html" id="back-link">
+                <svg width="64px" height="64px" id="back-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> </defs> <g data-name="Layer 2" id="Layer_2"> <g data-name="E421, Back, buttons, multimedia, play, stop" id="E421_Back_buttons_multimedia_play_stop"> <circle class="cls-1" cx="256" cy="256" r="246"></circle> <line class="cls-1" x1="352.26" x2="170.43" y1="256" y2="256"></line> <polyline class="cls-1" points="223.91 202.52 170.44 256 223.91 309.48"></polyline> </g> </g> </g></svg>
+                <p id="svg-text">MAIN MENU</p>
+            </a>
+
+            <p class="sidenav-title">
+                <b>CARS</b>
+            </p>
+           <p class="sidenav-button" id="ae86-section-button">
+            AE86
+           </p>
+           <p class="sidenav-button" id="fd3s-section-button">
+            MAZDA RX7 (FD3S)
+           </p>
+           <p class="sidenav-button" id="fc3s-section-button">
+            MAZDA RX7 (FC3S)
+           </p>
+        </div>
+
+        <div class="section" id="about-page">
+            <p id="car-name"><b></b></p>
+
+            <div id="ae86-section">
+                <p><b>Fujiwara's AE86</b></p>
+                <img src="Images/ae86.png" alt="">
+                <p><b>Specs:</b></p>
+                <ul>
+                    <li><p>Cibie T353 Amber Fog Lights</p></li>
+                    <li><p>Fujiwara Tofu Shop (藤原とうふ店 (自家用)) Decal (Right Side)</p></li>
+                    <li><p>Italvolanti Imola R Steering Wheel</p></li>
+                    <li><p>RS Watanabe Eight Spoke Wheels (Black)</p></li>
+                    <li><p>OEM Door Visors removed</p></li>
+                    <li><p>Smiths 12,000 RPM Tachometer and Smiths auxiliary gauges</p></li>
+                    <li><p>Lightweight FRP Rear Gate with Acrylic Windows</p></li>
+                    <li><p>TRD Carbon Fiber Hood and Carbon Fiber Headlights</p></li>
+                    <li><p>Cusco 2 Point Strut Bar</p></li>
+                    <li><p>Cusco Safety 21 7 Point Roll Cage</p></li>
+                    <li><p>A TRD Bucket racing seat W/ Takata Drift II 4-point harnesses</p></li>
+                    <li><p>Cup holder, resembling a Seikosangyo EB-48</p></li>
+                    <li><p>OEM Zenki Analog Cluster</p></li>
+                </ul>
+            </div>
+
+            <div id="fd3s-section">
+                <p><b>Keisuke’s FD3S</b></p>
+                <img src="Images/fd3s.png" alt="">
+                <p><b>Specs:</b></p>
+                <ul>
+                    <li><p>RE Amemiya Carbon AD9 Hood</p></li>
+                    <li><p>RE Amemiya TA Replica Dolphin tail muffler</p></li>
+                    <li><p>RE Amemiya GT-AD aero kit with carbon fiber canard</p></li>
+                    <li><p>RE Amemiya Sleek Headlights [Right headlight replaced with airduct]</p></li>
+                    <li><p>RE Amemiya Rear Diffuser-Pro (Carbon) W/ Carbon Vortex Generator</p></li>
+                    <li><p>RE Amemiya GT II spoiler</p></li>
+                    <li><p>RE Amemiya AD Mirror Type 1</p></li>
+                    <li><p>RE Amemiya D-Bottom steering wheel (Green) W/ Rotary Green Vintage emblem</p></li>
+                    <li><p>Omoni 1.5 bar boost gauge (1 bar boost setting)</p></li>
+                    <li><p>HKS lap timer</p></li>
+                    <li><p>RE Amemiya Quicker Shift Knob (Blue)</p></li>
+                    <li><p>Bride Lightweight Bucket Racing Seats</p></li>
+                    <li><p>Takata 4 point race harnesses (Green)</p></li>
+                    <li><p>Custom 4 point Roll Bar</p></li>
+                    <li><p>Tanabe SSR Type C Rims (Bronze)</p></li>
+                    <li><p>Mazda RX-7 Series 8 Taillights</p></li>
+                </ul>
+            </div>
+
+            <div id="fc3s-section">
+                <p><b>Ryosuke’s FC3S</b></p>
+                <img src="Images/fc3s.png" alt="">
+                <p><b>Specs:</b></p>
+                <ul>
+                    <li><p>Custom exhaust system (right side)</p></li>
+                    <li><p>RE Amemiya Kouki Full Cowl SPL Front Bumper with Fixed HID Headlights</p></li>
+                    <li><p>Garage Kagotani Carbon Fiber Hood</p></li>
+                    <li><p>RE Amemiya Rear Side Step (no left-hand muffler exit)</p></li>
+                    <li><p>Auto Garage FreeStyle GT Wing</p></li>
+                    <li><p>ULTRA SPEED MONITOR</p></li>
+                    <li><p>Custom Gauge Cluster</p></li>
+                    <li><p>Your's Sports Side Mirrors</p></li>
+                    <li><p>SSR Type C Rims (Bronze)</p></li>
+                    <li><p>(Driver)Unknown Bucket Racing Seats, (Passenger) Bride Brix</p></li>
+                    <li><p>Custom Roll Cage</p></li>
+                    <li><p>MOMO Mod.69 Steering Wheel</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
