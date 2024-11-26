@@ -265,7 +265,7 @@ if (document.getElementById("barrier")) {
 function removeSections() {
 
     const sections = ['gunma', 'tochigi', 'saitama', 'ibaraki', 'kanagawa', 'chiba', 'tokyo'];
-    const provinces = ['akina', 'akagi', 'myogi', 'usui', 'momiji', 'irohazaka', 'enna-skyline', 'happogahara', 'shomaru', 'sadamine', 'maze', 'tsuchisaka', 'tsukuba', 'yabitsu', 'nagao', 'nanamagari','tsubaki'];
+    const provinces = ['akina', 'akagi', 'myogi', 'usui', 'momiji', 'irohazaka', 'enna-skyline', 'happogahara', 'shomaru', 'sadamine', 'maze', 'tsuchisaka', 'tsukuba', 'yabitsu', 'nagao', 'nanamagari','tsubaki', 'chiba', 'tokyo'];
 
     sections.forEach(function (section) {
         document.getElementById(`${section}-section`).style.display = 'none';
@@ -482,6 +482,18 @@ if (document.getElementById('tsubaki-section-button')) {
     })
 }
 
+if (document.getElementById('chiba-section-button')) {
+    document.getElementById('chiba-section-button').addEventListener('click', function() {
+        togglePrefecture('chiba');
+    })
+}
+
+if (document.getElementById('tokyo-section-button')) {
+    document.getElementById('tokyo-section-button').addEventListener('click', function() {
+        togglePrefecture('tokyo');
+    })
+}
+
 $("#akina-track").on('click', function(e) {
     e.preventDefault();
     sessionStorage.setItem('province', 'akina')
@@ -580,6 +592,18 @@ $("#tsubaki-track").on('click', function(e) {
     e.preventDefault();
     sessionStorage.setItem('province', 'tsubaki')
     console.log("tsubaki")
+    window.location.replace('provinces.html')
+});
+$("#chiba-track").on('click', function(e) {
+    e.preventDefault();
+    sessionStorage.setItem('province', 'chiba')
+    console.log("chiba")
+    window.location.replace('provinces.html')
+});
+$("#tokyo-track").on('click', function(e) {
+    e.preventDefault();
+    sessionStorage.setItem('province', 'tokyo')
+    console.log("tokyo")
     window.location.replace('provinces.html')
 });
 
