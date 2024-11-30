@@ -98,7 +98,6 @@ function toggleProvinceData(targetProvince) {
 }
 
 
-if (document.getElementById('gunma'))
 $("#gunma-map").on('click', function(e) {
     e.preventDefault(); // Prevent default link behavior
     toggleProvinceData('gunma');
